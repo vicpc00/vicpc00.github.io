@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>td-stargan-vc</title>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    #player {
+        width: 200px;
+    }​
+    </style>
+  </head>
+
+  <body>
+    <div id="results">
+      <h1>Conversion results</h1>
+      <h2>Female to female</h2>
+      <table>
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td>Speakers</td>
+            <td>Source speaker</td>
+            <td>Target speaker</td>
+            <td>Proposed</td>
+            <td>Proposed (non-SSL)</td>
+            <td>YourTTS</td>
+            <td>FreeVC</td>
+          </tr>
+          <tr>
+            <td>F008 to F029</td>
+            <td><audio controls id="player"><source src="signals/refs/0000-Benita_F008-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0016-Narhua_F029-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0000-Benita_F008-Narhua_F029-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0000-Benita_F008-Narhua_F029-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0000-Benita_F008-Narhua_F029-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0000-Benita_F008-Narhua_F029-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>F014 to F008</td>
+            <td><audio controls id="player"><source src="signals/refs/0015-Ieda_F014-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0013-Benita_F008-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0015-Ieda_F014-Benita_F008-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0015-Ieda_F014-Benita_F008-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0015-Ieda_F014-Benita_F008-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0015-Ieda_F014-Benita_F008-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>F007 to F014</td>
+            <td><audio controls id="player"><source src="signals/refs/0011-Cristiane_F007-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0009-Ieda_F014-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0011-Cristiane_F007-Ieda_F014-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0011-Cristiane_F007-Ieda_F014-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0011-Cristiane_F007-Ieda_F014-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0011-Cristiane_F007-Ieda_F014-conv.wav" /></audio></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Male to male</h2>
+      <table>
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td>Speakers</td>
+            <td>Source speaker</td>
+            <td>Target speaker</td>
+            <td>Proposed</td>
+            <td>Proposed (non-SSL)</td>
+            <td>YourTTS</td>
+            <td>FreeVC</td>
+          </tr>
+          <tr>
+            <td>M033 to M045</td>
+            <td><audio controls id="player"><source src="signals/refs/0022-LucasSabino9_M033-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0009-PedroHenrique_M045-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0022-LucasSabino9_M033-PedroHenrique_M045-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0022-LucasSabino9_M033-PedroHenrique_M045-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0022-LucasSabino9_M033-PedroHenrique_M045-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0022-LucasSabino9_M033-PedroHenrique_M045-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>M045 to M006</td>
+            <td><audio controls id="player"><source src="signals/refs/0018-PedroHenrique_M045-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0003-MarcosBittencourt_M006-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0018-PedroHenrique_M045-MarcosBittencourt_M006-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0018-PedroHenrique_M045-MarcosBittencourt_M006-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0018-PedroHenrique_M045-MarcosBittencourt_M006-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0018-PedroHenrique_M045-MarcosBittencourt_M006-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>M006 to M035</td>
+            <td><audio controls id="player"><source src="signals/refs/0006-MarcosBittencourt_M006-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0001-Rogerio_M035-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0006-MarcosBittencourt_M006-Rogerio_M035-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0006-MarcosBittencourt_M006-Rogerio_M035-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0006-MarcosBittencourt_M006-Rogerio_M035-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0006-MarcosBittencourt_M006-Rogerio_M035-conv.wav" /></audio></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Male to female</h2>
+      <table>
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td>Speakers</td>
+            <td>Source speaker</td>
+            <td>Target speaker</td>
+            <td>Proposed</td>
+            <td>Proposed (non-SSL)</td>
+            <td>YourTTS</td>
+            <td>FreeVC</td>
+          </tr>
+          <tr>
+            <td>M045 to F008</td>
+            <td><audio controls id="player"><source src="signals/refs/0019-PedroHenrique_M045-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0015-Benita_F008-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0019-PedroHenrique_M045-Benita_F008-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0019-PedroHenrique_M045-Benita_F008-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0019-PedroHenrique_M045-Benita_F008-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0019-PedroHenrique_M045-Benita_F008-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>M006 to F014</td>
+            <td><audio controls id="player"><source src="signals/refs/0003-MarcosBittencourt_M006-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0011-Ieda_F014-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0003-MarcosBittencourt_M006-Ieda_F014-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0003-MarcosBittencourt_M006-Ieda_F014-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0003-MarcosBittencourt_M006-Ieda_F014-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0003-MarcosBittencourt_M006-Ieda_F014-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>M033 to F029</td>
+            <td><audio controls id="player"><source src="signals/refs/0016-LucasSabino9_M033-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0000-Narhua_F029-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0016-LucasSabino9_M033-Narhua_F029-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0016-LucasSabino9_M033-Narhua_F029-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0016-LucasSabino9_M033-Narhua_F029-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0016-LucasSabino9_M033-Narhua_F029-conv.wav" /></audio></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Female to male</h2>
+      <table>
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td>Speakers</td>
+            <td>Source speaker</td>
+            <td>Target speaker</td>
+            <td>Proposed</td>
+            <td>Proposed (non-SSL)</td>
+            <td>YourTTS</td>
+            <td>FreeVC</td>
+          </tr>
+          <tr>
+            <td>F008 to M006</td>
+            <td><audio controls id="player"><source src="signals/refs/0013-Benita_F008-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0018-MarcosBittencourt_M006-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0013-Benita_F008-MarcosBittencourt_M006-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0013-Benita_F008-MarcosBittencourt_M006-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0013-Benita_F008-MarcosBittencourt_M006-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0013-Benita_F008-MarcosBittencourt_M006-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>F014 to M045</td>
+            <td><audio controls id="player"><source src="signals/refs/0009-Ieda_F014-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0018-PedroHenrique_M045-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0009-Ieda_F014-PedroHenrique_M045-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0009-Ieda_F014-PedroHenrique_M045-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0009-Ieda_F014-PedroHenrique_M045-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0009-Ieda_F014-PedroHenrique_M045-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>F007 to M035</td>
+            <td><audio controls id="player"><source src="signals/refs/0001-Cristiane_F007-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0006-Rogerio_M035-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan/0001-Cristiane_F007-Rogerio_M035-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/td-vc-gan-conv/0001-Cristiane_F007-Rogerio_M035-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/yourtts/0001-Cristiane_F007-Rogerio_M035-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/freevc/0001-Cristiane_F007-Rogerio_M035-conv.wav" /></audio></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="ablation">
+      <h1>Ablation study</h1>
+      <table>
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td>Speakers</td>
+            <td>Source speaker</td>
+            <td>Target speaker</td>
+            <td>Base model</td>
+            <td>No pitch loss </td>
+          </tr>
+          <tr>
+            <td>F014 to F008</td>
+            <td><audio controls id="player"><source src="signals/refs/0003-Ieda_F014-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0015-Benita_F008-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-base/0003-Ieda_F014-Benita_F008-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-lf0_0/0003-Ieda_F014-Benita_F008-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>M045 to M006</td>
+            <td><audio controls id="player"><source src="signals/refs/0009-PedroHenrique_M045-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0003-MarcosBittencourt_M006-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-base/0009-PedroHenrique_M045-MarcosBittencourt_M006-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-lf0_0/0009-PedroHenrique_M045-MarcosBittencourt_M006-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>M006 to F014</td>
+            <td><audio controls id="player"><source src="signals/refs/0013-MarcosBittencourt_M006-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0015-Ieda_F014-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-base/0013-MarcosBittencourt_M006-Ieda_F014-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-lf0_0/0013-MarcosBittencourt_M006-Ieda_F014-conv.wav" /></audio></td>
+          </tr>
+          <tr>
+            <td>F029 to M033</td>
+            <td><audio controls id="player"><source src="signals/refs/0016-Narhua_F029-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/refs/0022-LucasSabino9_M033-X-orig.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-base/0016-Narhua_F029-LucasSabino9_M033-conv.wav" /></audio></td>
+            <td><audio controls id="player"><source src="signals/ablation-lf0_0/0016-Narhua_F029-LucasSabino9_M033-conv.wav" /></audio></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
