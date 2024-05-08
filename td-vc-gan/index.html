@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>td-stargan-vc</title>
+    <title>A Pitch-Controlled End-to-End Voice Conversion System for Brazilian Portuguese</title>
     <style>
     table, th, td {
       border: 1px solid black;
@@ -15,9 +15,15 @@
   </head>
 
   <body>
+    <div id="abstract" style="max-width:1300px; word-wrap:break-word;">
+    <h1>A Pitch-Controlled End-to-End Voice Conversion System for Brazilian Portuguese</h1>
+    <h2>Abstract</h2>
+    <p>Speech conversion is a technique that modifies the identity of the voice in a speech signal without changing the spoken content. Accurate pitch conversion is a requirement the best speech conversion systems must address, as this characteristic is essential to the correct identification of the target speaker. This work proposes a pitch-controlled end-to-end voice conversion model that combines state-of-the-art ideas from both speaking and singing voice conversion with a novel cost function to ensure artifact-free pitch tracking. The model is trained in Brazilian Portuguese, overcoming the lack of high-quality data by improving a large but flawed dataset with filtering operation. Our model mostly outperforms other popular open source models in both listening tests and objective measurements. In particular, on a 5-point MOS, we obtained the highest speaker similarity score (4.05), and a naturalness score of 3.48, second only to a system whose similarity score was 2.62.</p>
+    <p>Our implementation caan be found in our <a href="https://github.com/vicpc00/td-vc-gan" target="_blank" rel="nofollow">Github repository</a></p>
+    </div>
     <div id="results">
-      <h1>Conversion results</h1>
-      <h2>Female to female</h2>
+      <h2>Conversion results</h2>
+      <h3>Female to female</h3>
       <table>
         <thead>
 
@@ -62,7 +68,7 @@
         </tbody>
       </table>
 
-      <h2>Male to male</h2>
+      <h3>Male to male</h3>
       <table>
         <thead>
 
@@ -106,7 +112,7 @@
           </tr>
         </tbody>
       </table>
-      <h2>Male to female</h2>
+      <h3>Male to female</h3>
       <table>
         <thead>
 
@@ -150,7 +156,7 @@
           </tr>
         </tbody>
       </table>
-      <h2>Female to male</h2>
+      <h3>Female to male</h3>
       <table>
         <thead>
 
@@ -196,7 +202,7 @@
       </table>
     </div>
     <div id="ablation">
-      <h1>Ablation study</h1>
+      <h2>Ablation study</h2>
       <table>
         <thead>
 
